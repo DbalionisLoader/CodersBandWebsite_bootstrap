@@ -1,0 +1,169 @@
+/* Header */
+header {
+    color: white;
+  }
+  
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1280px; 
+  }
+  
+header .logo{
+    font-size: 25px;
+}
+  
+header .navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+  }
+  
+header .navbar ul li {
+    display: inline-block;
+    margin-left: 10px;
+  }
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(19, 14, 14);
+}
+
+.container-fluid {
+  display: flex;
+  justify-content: space-between;
+}
+  
+
+  
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    letter-spacing: .1em;
+    font-weight: 600;
+  }
+
+    
+
+
+.main-menu ul li a:hover { 
+    text-decoration: underline 2px;
+  }
+  
+  
+  /* Hero Carousel */
+
+  /* From stackoverflow https://stackoverflow.com/questions/73561420/how-to-make-images-the-same-height-in-a-bootstrap-5-carousel */
+  /*This limits the height of the image and only display 25% to fill the container, adjusting the % shows more or less of image - 25% to 35% looks best*/
+.carousel-inner{
+    height: 0; 
+    padding-bottom: 25%; /* this sets carousel aspect ratio (4:1 here) */
+
+  }
+.carousel-item {
+    position: relative;
+  }
+
+.big-image img{ /* 3rd Image is so large, it needs resizing to match  closer to others */
+    width: 100%;
+  }
+
+.carousel-item img {
+    width: 100%;
+    height: 100%; /* Bootstrap handles width already */
+    object-fit: contain; /* or 'contain' if you want stretch instead of crop */
+  
+  }
+
+  
+/* Main Content */
+.main-content {
+    margin-top: 20px;
+  }
+
+.container {
+    max-width: 1280px;
+}
+  
+.main-content h2 {
+    margin-top: 0;
+  }
+
+.about-section-wrapper {
+  display: flex ;
+
+}
+  
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio for responsive video */
+  }
+  
+.video-wrapper iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  
+/* Sidebar */
+.main-content .sidebar-wrapper {
+    background-color: #f8f8f8;
+    padding: 10px;
+
+  }
+
+.sidebar-wrapper {
+    flex:1;
+    flex-shrink: 0;
+    flex-basis: 20%;
+}
+
+.sidebar-wrapper ul li {
+    font-family: 'impact','sans-serif';
+}
+  
+.tour-dates {
+    list-style: none;
+    padding: 0;
+  }
+  
+.tour-dates li {
+    margin-bottom: 10px;
+  }
+  
+  /* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+footer p {
+    margin: 0;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    header .logo {
+      text-align: center;
+    }
+  
+    header .main-menu {
+      margin-top: 10px;
+      text-align: center;
+    }
+  
+    .main-content .sidebar-wrapper {
+      margin-top: 0px;
+    }
+  }
+  
