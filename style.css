@@ -61,6 +61,11 @@ header .logo{
 .carousel-caption h3 {
   margin-bottom: 24px;
 }
+
+.carousel-caption button {
+  padding: 12px 24px 12px 24px;
+  font-weight: 600;
+}
 /* Combined common tags to reduce redundance */
 .overlay-img, .overlay-img2{ 
   height: 400px;
