@@ -68,18 +68,25 @@ header .logo{
   font-weight: 600;
 }
 
-.overlay-img {
-  position: fixed; /* Sit on top of the page content */
-  display: none; /* Hidden by default */
-  width: 100%; /* Full width (cover the whole page) */
-  height: 100%; /* Full height (cover the whole page) */
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
-  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-  cursor: pointer; /* Add a pointer on hover */
+.overlay-img { /* Add gradient to image to better contrast with white heading*/
+  height: 400px;
+  width: 100%;
+  overflow: hidden;
+  background: #0b40a3;  /* fallback for old browsers */
+  background: linear-gradient(rgb(72,0,72,0.8), rgb(192,72,72,0.8)), url("./images/FallOutBoy-JonathanWeiner-2019.jpg");  /* Chrome 10-25, Safari 5.1-6 */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.overlay-img2 {
+  height: 400px;
+  width: 100%;
+  overflow: hidden;
+  background: rgb(21, 80, 146);  /* fallback for old browsers */
+  background: linear-gradient(90deg, rgba(2,0,36,0.009010293570553274) 0%, rgba(87,183,205,1) 100%), 
+  url("./images/Pete-Wentz-of-Fall-Out-Boy.-Credit-Scott-Legato-via-Getty-Images.jpg");  /* Chrome 10-25, Safari 5.1-6 */
+  background-size: cover;
+  background-repeat: no-repeat;
 }
   
 /* Main Content */
